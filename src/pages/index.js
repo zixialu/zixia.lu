@@ -3,8 +3,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import About from '../components/about';
-import Projects from '../components/about';
-import Contact from '../components/about';
+import Projects from '../components/projects';
+import Contact from '../components/contact';
 
 const IndexPage = () => (
   <Layout>
