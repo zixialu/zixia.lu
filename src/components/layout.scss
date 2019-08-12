@@ -1,7 +1,20 @@
 @import './reset';
 
 // Type
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,900,900i&display=swap');
+
 body {
+  margin: 0;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+
+  // Dark on Light
+  -webkit-font-smoothing: auto;
+  // Light on Dark
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+
   font-size: 100%; // In most browsers, this defaults to 16 pixels
   @media (min-width: 768px) {
     font-size: 112.5%; // = 18 pixels in most browsers
@@ -19,7 +32,6 @@ a {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items: stretch;
 
   #sidebar {
     flex: 0 1 auto;

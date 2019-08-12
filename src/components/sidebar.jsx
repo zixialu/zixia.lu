@@ -6,8 +6,8 @@ import './sidebar.scss';
 
 const Sidebar = () => (
   <nav id="sidebar">
-    <Link to="/">zixia.lu</Link>
-    <ul>
+    <Link to="/" className="brand">zixia.lu</Link>
+    <ul className="nav-list">
       <li>About</li>
       <li>Projects</li>
       <li>Contact</li>

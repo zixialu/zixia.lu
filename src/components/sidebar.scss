@@ -4,4 +4,22 @@
 
   background-color: #e54b4b;
   color: #ffffff;
+
+  .brand {
+    display: block;
+
+    font-size: 2.5em;
+    font-weight: 900;
+    font-style: italic;
+
+    padding: 0.5em;
+  }
+
+  .nav-list {
+    list-style-type: none;
+
+    li {
+      padding-top: 1em;
+    }
+  }
 }
