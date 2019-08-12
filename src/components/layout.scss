@@ -1,1 +1,16 @@
 @import './reset';
+
+#app {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  #sidebar {
+    flex: 0 1 auto;
+  }
+
+  #content {
+    flex: 1 1 auto;
+  }
+}

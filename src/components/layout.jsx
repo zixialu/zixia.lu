@@ -24,9 +24,9 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
+    <div id="app">
       <Sidebar />
-      <div>
+      <div id="content">
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-    </>
+    </div>
   );
 };
 
