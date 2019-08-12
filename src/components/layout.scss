@@ -1,5 +1,13 @@
 @import './reset';
 
+// Type
+body {
+  font-size: 100%; // In most browsers, this defaults to 16 pixels
+  @media (min-width: 768px) {
+    font-size: 112.5%; // = 18 pixels in most browsers
+  }
+}
+
 #app {
   display: flex;
   flex-flow: row nowrap;
