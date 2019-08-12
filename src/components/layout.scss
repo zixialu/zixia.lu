@@ -8,6 +8,13 @@ body {
   }
 }
 
+a {
+  // Remove default link highlighting
+  // TODO: Implement some form of differentiation for links
+  color: inherit; /* default colors for links */
+  text-decoration: inherit; /* no underline */
+}
+
 #app {
   display: flex;
   flex-flow: row nowrap;
