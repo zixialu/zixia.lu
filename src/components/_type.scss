@@ -34,7 +34,7 @@ $text-sm: calc($text-xs * $text-scale);
 $text-md: calc($text-sm * $text-scale);
 $text-lg: calc($text-md * $text-scale);
 $text-xl: calc($text-lg * $text-scale);
-$text-xxl: calc($text-lx * $text-scale);
+$text-xxl: calc($text-xl * $text-scale);
 $text-xxxl: calc($text-xxl * $text-scale);
 
 .text--xxxl {
