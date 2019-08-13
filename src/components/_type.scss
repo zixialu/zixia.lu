@@ -1,6 +1,18 @@
 // Montserrat
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,900,900i&display=swap');
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+}
+
 body {
   // Dark on Light
   -webkit-font-smoothing: auto;
@@ -14,16 +26,43 @@ body {
   }
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+// Type Scale
+$text-scale: 1.2;
+
+$text-xs: calc(1em / ($text-scale * $text-scale));
+$text-sm: calc($text-xs * $text-scale);
+$text-md: calc($text-sm * $text-scale);
+$text-lg: calc($text-md * $text-scale);
+$text-xl: calc($text-lg * $text-scale);
+$text-xxl: calc($text-lx * $text-scale);
+$text-xxxl: calc($text-xxl * $text-scale);
+
+.text--xxxl {
+  font-size: $text-xxxl;
+}
+
+h1, .text--xxl{
+  font-size: $text-xxl;
+}
+
+h2, .text--xl{
+  font-size: $text-xl;
+}
+
+h3, .text--lg{
+  font-size: $text-lg;
+}
+
+h4, .text--md {
+  font-size: $text-md;
+}
+
+.text--sm, small {
+    font-size: $text-sm;
+}
+
+.text--xs {
+    font-size: $text-xs;
 }
 
 a {
