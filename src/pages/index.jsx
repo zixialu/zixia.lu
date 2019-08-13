@@ -8,8 +8,7 @@ import Contact from '../components/contact';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Test page please ignore</h1>
+    <SEO title="Full-stack Developer" />
     <About />
     <Projects />
     <Contact />
