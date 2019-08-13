@@ -6,11 +6,37 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import './externalLinks.scss';
 
+const links = [
+  {
+    name: 'GitHub',
+    url: 'https://github.com/zixialu',
+    icon: faGithub,
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/zixialu/',
+    icon: faLinkedin,
+  },
+  {
+    name: 'Email',
+    url: 'mailto:zixialu@gmail.com',
+    icon: faAt,
+  },
+];
+
 const ExternalLinks = () => (
   <ul className="external-links">
-    <li><FontAwesomeIcon icon={faGithub} /></li>
-    <li><FontAwesomeIcon icon={faLinkedin} /></li>
-    <li><FontAwesomeIcon icon={faAt} /></li>
+    {links.map((link) => (
+      <li key={link.name}>
+        <a
+          href={link.url}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <FontAwesomeIcon icon={link.icon} />
+        </a>
+      </li>
+    ))}
   </ul>
 );
 
