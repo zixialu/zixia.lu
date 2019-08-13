@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Zixia Lu`,
     siteUrl: `https://zixia.lu`,
-    description: `Full-stack Web Developer`,
+    description: `Full-stack Developer`,
     author: `@zixialu`,
   },
   plugins: [
