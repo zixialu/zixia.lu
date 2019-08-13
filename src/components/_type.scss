@@ -65,6 +65,20 @@ h4, .text--md {
     font-size: $text-xs;
 }
 
+// Line Height
+$heading-line-height: 1.2;
+$body-line-height: 1.4;
+
+p,
+ul li,
+ol li {
+  line-height: $body-line-height;
+}
+
+h1, h2, h3, h4 {
+  line-height: $heading-line-height;
+}
+
 a {
   // Remove default link highlighting
   // TODO: Implement some form of differentiation for links
