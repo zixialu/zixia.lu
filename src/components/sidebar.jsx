@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import ExternalLinks from './externalLinks';
 import './sidebar.scss';
 
 const Sidebar = () => (
@@ -12,6 +13,8 @@ const Sidebar = () => (
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <ExternalLinks />
   </nav>
 );
 
