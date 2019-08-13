@@ -20,6 +20,7 @@ const links = [
   {
     name: 'Email',
     url: 'mailto:zixialu@gmail.com',
+    target: '_self',
     icon: faAt,
   },
 ];
@@ -30,7 +31,7 @@ const ExternalLinks = () => (
       <li key={link.name}>
         <a
           href={link.url}
-          target="_blank"
+          target={link.target || '_blank'}
           rel="noreferrer noopener"
         >
           <FontAwesomeIcon icon={link.icon} />
