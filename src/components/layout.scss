@@ -8,10 +8,15 @@
 
   #sidebar {
     flex: 0 1 auto;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 
   #content {
     flex: 1 1 auto;
+
     padding: 2em 4em;
   }
 }
