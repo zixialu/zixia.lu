@@ -66,8 +66,8 @@ h4, .text--md {
 }
 
 // Line Height & Spacing
-$heading-line-height: 1.2;
-$body-line-height: 1.4;
+$heading-line-height: 1.2em;
+$body-line-height: 1.4em;
 
 $space-xxxs: 0.25em;
 $space-xxs:  0.375em;
@@ -83,6 +83,7 @@ p,
 ul li,
 ol li {
   line-height: $body-line-height;
+  max-width: 30em;
   margin-bottom: $space-md;
 }
 
