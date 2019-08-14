@@ -2,7 +2,8 @@ import React from 'react';
 
 const About = () => (
   <>
-    <h1 id="about">About Zixia</h1>
+    <h1 id="about" className="text--xxxl">Zixia Lu</h1>
+    <h1 className="text--xxxl">Web Developer</h1>
 
     <p>“And surely none stranger than itself,” echoed the lawyer in the same tones. “For what did Jekyll”--he caught himself up at the word with a start, and then conquering the weakness--“what could Jekyll want with it?” he said.</p>
 
