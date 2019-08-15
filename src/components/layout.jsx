@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import ScrollIndicator from './scrollIndicator';
-import Sidebar from './sidebar';
+import Menu from './menu';
 import './layout.scss';
 
 const Layout = ({ children }) => {
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <div id="app">
-      <Sidebar />
+      <Menu />
       <div id="content">
         <ScrollIndicator />
         <main>{children}</main>

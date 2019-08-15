@@ -2,10 +2,10 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 import ExternalLinks from './externalLinks';
-import './sidebar.scss';
+import './menu.scss';
 
-const Sidebar = () => (
-  <nav id="sidebar">
+const Menu = () => (
+  <nav id="menu">
     <Link to="/" className="brand text--xxxxl">zixia.lu</Link>
     <ul className="nav-list">
       <li className="text--lg"><a href="#about">About</a></li>
@@ -17,10 +17,10 @@ const Sidebar = () => (
   </nav>
 );
 
-Sidebar.propTypes = {
+Menu.propTypes = {
 };
 
-Sidebar.defaultProps = {
+Menu.defaultProps = {
 };
 
-export default Sidebar;
+export default Menu;
