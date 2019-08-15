@@ -29,6 +29,9 @@
       }
 
       margin: 2em auto;
+      @include for-md-up {
+        margin: 2em auto 2em 3em;
+      }
     }
   }
 }
