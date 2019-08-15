@@ -2,16 +2,20 @@
 @import './type';
 
 #app {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
 
   #menu {
     flex: 0 1 auto;
 
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    @media only screen and (min-width: 768px) {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
   }
 
   #content {
