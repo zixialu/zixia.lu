@@ -6,11 +6,11 @@ import './sidebar.scss';
 
 const Sidebar = () => (
   <nav id="sidebar">
-    <Link to="/" className="brand">zixia.lu</Link>
+    <Link to="/" className="brand text--xxxxl">zixia.lu</Link>
     <ul className="nav-list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li className="text--lg"><a href="#about">About</a></li>
+      <li className="text--lg"><a href="#projects">Projects</a></li>
+      <li className="text--lg"><a href="#contact">Contact</a></li>
     </ul>
 
     <ExternalLinks />

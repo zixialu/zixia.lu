@@ -36,6 +36,11 @@ $text-lg: calc(#{$text-md} * #{$text-scale});
 $text-xl: calc(#{$text-lg} * #{$text-scale});
 $text-xxl: calc(#{$text-xl} * #{$text-scale});
 $text-xxxl: calc(#{$text-xxl} * #{$text-scale});
+$text-xxxxl: calc(#{$text-xxxl} * #{$text-scale});
+
+.text--xxxxl {
+  font-size: $text-xxxxl;
+}
 
 .text--xxxl {
   font-size: $text-xxxl;

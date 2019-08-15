@@ -12,7 +12,6 @@
   .brand {
     display: block;
 
-    font-size: 2.5em;
     font-weight: 900;
     font-style: italic;
 
@@ -22,10 +21,13 @@
   .nav-list {
     list-style-type: none;
 
-    padding-top: 0.5em;
+    padding-top: 1.25em;
 
     li {
-      padding-top: 1em;
+      font-weight: 900;
+      font-style: italic;
+
+      margin-bottom: 0.75em;
     }
   }
 
