@@ -9,6 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import ScrollIndicator from './scrollIndicator';
 import Sidebar from './sidebar';
 import './layout.scss';
 
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
     <div id="app">
       <Sidebar />
       <div id="content">
+        <ScrollIndicator />
         <main>{children}</main>
         <footer>
           ©
