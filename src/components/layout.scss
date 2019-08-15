@@ -1,8 +1,9 @@
 @import './reset';
 @import './type';
+@import './breakpoints';
 
 #app {
-  @media only screen and (min-width: 768px) {
+  @include for-md-up {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -11,7 +12,7 @@
   #menu {
     flex: 0 1 auto;
 
-    @media only screen and (min-width: 768px) {
+    @include for-md-up {
       position: -webkit-sticky;
       position: sticky;
       top: 0;
