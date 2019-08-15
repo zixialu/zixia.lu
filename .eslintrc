@@ -4,5 +4,8 @@
   },
   "extends": [
     "airbnb"
-  ]
+  ],
+  "rules": {
+    "max-len": "warn"
+  }
 }
