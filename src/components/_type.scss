@@ -107,6 +107,13 @@ a {
   text-decoration: inherit; /* no underline */
 
   line-height: $body-line-height;
+
+  border-bottom: 4px solid $color-primary;
+  padding: 0 0.125em;
+}
+
+a:hover {
+  background-color: change-color($color: $color-primary, $alpha: 0.2);
 }
 
 .background--primary {
