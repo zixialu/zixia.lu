@@ -6,7 +6,8 @@ import './scrollIndicator.scss';
 const ScrollIndicator = () => {
   // Calculate the progress and return as a percentage string
   const getProgress = () => {
-    const { scrollTop, scrollHeight, innerHeight } = document.documentElement;
+    const { scrollTop, scrollHeight } = document.documentElement;
+    const { innerHeight } = window;
     const winHeight = scrollHeight - innerHeight;
     const scrolled = `${(scrollTop / winHeight) * 100}%`;
     return scrolled;
