@@ -1,13 +1,16 @@
 @import './breakpoints';
 
 #menu {
+  display: flex;
+  flex-flow: column nowrap;
+
   z-index: 1;
 
   padding-bottom: 1em;
 
   @include for-md-up {
     height: 100vh;
-    width: 15em;
+    width: 14em;
   }
 
   background-color: #e54b4b;
@@ -31,17 +34,15 @@
 
     padding-top: 1.25em;
 
+    @include for-md-up {
+      flex: 1 0 auto;
+    }
+
     li {
       font-weight: 900;
       font-style: italic;
 
       margin-bottom: 0.75em;
     }
-  }
-
-  .external-links {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
   }
 }
