@@ -2,4 +2,4 @@
 
 https://zixia.lu/
 
-A portfolio page.
+A portfolio page. Currently a work in progress.
