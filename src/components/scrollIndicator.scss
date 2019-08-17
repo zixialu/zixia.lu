@@ -1,3 +1,5 @@
+@import './color';
+
 .scroll-indicator {
   height: 5px;
   width: 100%;
@@ -9,7 +11,7 @@
   z-index: 2;
 
   .scroll-fill {
-    background-color: #e54b4b;
+    background-color: $color-primary;
 
     height: 100%;
   }
