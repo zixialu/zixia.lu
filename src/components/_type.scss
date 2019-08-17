@@ -1,6 +1,7 @@
-// Montserrat
+@import './color';
 @import './breakpoints';
 
+// Montserrat
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,900,900i&display=swap');
 
 body,
@@ -104,4 +105,17 @@ a {
   // TODO: Implement some form of differentiation for links
   color: inherit; /* default colors for links */
   text-decoration: inherit; /* no underline */
+}
+
+.background--primary {
+  // Light on Dark
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a:hover {
+    background-color: $color-white;
+    color: $color-primary;
+
+    -webkit-font-smoothing: auto;
+  }
 }

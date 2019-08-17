@@ -13,20 +13,11 @@
     width: 14em;
   }
 
-  background-color: #e54b4b;
-  color: #ffffff;
-
-  // Light on Dark
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
   .brand {
-    display: block;
-
     font-weight: 900;
     font-style: italic;
 
-    padding: 0.5em;
+    margin: 0.5em;
   }
 
   .nav-list {
