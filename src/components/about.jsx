@@ -12,7 +12,7 @@ const About = () => (
     </p>
 
     <p className="text--xl">
-      He could not have possibly known what the universe had in store.
+      <strong>He could not have possibly known what the universe had in store.</strong>
     </p>
 
     <p className="text--xxxl">
