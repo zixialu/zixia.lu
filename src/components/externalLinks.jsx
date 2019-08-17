@@ -33,7 +33,9 @@ const ExternalLinks = () => (
           target={link.target || '_blank'}
           rel="noreferrer noopener"
         >
-          <FontAwesomeIcon icon={link.icon} />
+          <div className="icon-container-square">
+            <FontAwesomeIcon icon={link.icon} />
+          </div>
         </a>
       </li>
     ))}
