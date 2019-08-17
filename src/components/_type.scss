@@ -105,6 +105,8 @@ a {
   // TODO: Implement some form of differentiation for links
   color: inherit; /* default colors for links */
   text-decoration: inherit; /* no underline */
+
+  line-height: $body-line-height;
 }
 
 .background--primary {
