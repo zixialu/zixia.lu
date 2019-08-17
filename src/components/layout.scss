@@ -1,25 +1,37 @@
 @import './reset';
 @import './type';
+@import './breakpoints';
 
 #app {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
+  @include for-md-up {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
 
   #menu {
     flex: 0 1 auto;
 
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    @include for-md-up {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
   }
 
   #content {
     flex: 1 1 auto;
 
     main {
-      max-width: 30em;
+      max-width: 20em;
+      @include for-sm-up {
+        max-width: 30em;
+      }
+
       margin: 2em auto;
+      @include for-md-up {
+        margin: 2em 3em;
+      }
     }
   }
 }

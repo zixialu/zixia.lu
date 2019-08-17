@@ -1,0 +1,34 @@
+// Phone
+@mixin for-xs-only {
+  @media only screen and (max-width: 599px) {
+    @content;
+  }
+}
+
+// Tablet (portrait)
+@mixin for-sm-up {
+  @media only screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+// Tablet (landscape)
+@mixin for-md-up {
+  @media only screen and (min-width: 900px) {
+    @content;
+  }
+}
+
+// Desktop
+@mixin for-lg-up {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Desktop (large)
+@mixin for-xl-up {
+  @media only screen and (min-width: 1800px) {
+    @content;
+  }
+}
