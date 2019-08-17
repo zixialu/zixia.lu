@@ -1,8 +1,10 @@
+@import './type';
 @import './breakpoints';
 
 #menu {
   display: flex;
   flex-flow: column nowrap;
+  align-items: flex-start;
 
   z-index: 1;
 
@@ -16,14 +18,13 @@
   .brand {
     font-weight: 900;
     font-style: italic;
+    line-height: $heading-line-height;
 
-    margin: 0 1.45rem;
+    margin: 0.75rem 1.45rem;
   }
 
   .nav-list {
     list-style-type: none;
-
-    padding-top: 1.25em;
 
     @include for-md-up {
       flex: 1 0 auto;
@@ -33,7 +34,11 @@
       font-weight: 900;
       font-style: italic;
 
-      margin-bottom: 0.75em;
+      margin-bottom: 0.75rem;
     }
+  }
+
+  .external-links {
+    align-self: stretch;
   }
 }
