@@ -106,6 +106,7 @@ a {
   color: inherit; /* default colors for links */
   text-decoration: inherit; /* no underline */
 
+  font-weight: 700;
   line-height: $body-line-height;
 
   border-bottom: 0.125em solid $color-primary;
