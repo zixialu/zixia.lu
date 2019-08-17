@@ -29,9 +29,9 @@
         max-width: 30em;
       }
 
-      margin: 2em auto;
+      margin: 3em auto;
       @include for-md-up {
-        margin: 2em 3em;
+        margin: 3em;
       }
     }
   }
