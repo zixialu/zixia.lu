@@ -8,7 +8,7 @@ const About = () => (
 
     <p className="text--xl">
       Raised by Saturday morning cartoons and a dialup modem, Zixia knew at an
-      early age that he was destined for great things.
+      early age that he was destined for greatness.
     </p>
 
     <p className="text--lg">
