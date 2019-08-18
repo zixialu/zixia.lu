@@ -26,7 +26,7 @@ const links = [
   },
 ];
 
-const ExternalLinks = ({ vertical }) => (
+const ExternalLinks = ({ vertical, showNames }) => (
   <ul
     className={classNames(
       'external-links', { 'external-links--vertical': vertical },
@@ -42,6 +42,9 @@ const ExternalLinks = ({ vertical }) => (
           <div className="icon-container-square">
             <FontAwesomeIcon icon={link.icon} />
           </div>
+          {showNames && (
+            <span className="link-name">{link.name}</span>
+          )}
         </a>
       </li>
     ))}
@@ -50,10 +53,12 @@ const ExternalLinks = ({ vertical }) => (
 
 ExternalLinks.propTypes = {
   vertical: PropTypes.bool,
+  showNames: PropTypes.bool,
 };
 
 ExternalLinks.defaultProps = {
   vertical: false,
+  showNames: false,
 };
 
 export default ExternalLinks;

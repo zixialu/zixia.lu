@@ -7,7 +7,7 @@ const Contact = () => (
   <section id="contact">
     <h1>Contact</h1>
 
-    <ExternalLinks vertical />
+    <ExternalLinks vertical showNames />
   </section>
 );
 

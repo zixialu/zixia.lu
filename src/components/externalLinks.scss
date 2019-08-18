@@ -10,7 +10,10 @@
   margin: 0;
 
   a {
-    display: block;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+
     padding: 0.5em;
 
     .icon-container-square {
@@ -23,6 +26,10 @@
         height: 100%;
         margin: auto;
       }
+    }
+
+    .link-name {
+      padding-left: 0.625em;
     }
   }
 }
