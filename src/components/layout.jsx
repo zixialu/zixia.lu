@@ -14,34 +14,22 @@ import Menu from './menu';
 import Footer from './footer';
 import './layout.scss';
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+const Layout = ({ children }) => (
+  <div id="app">
+    <Menu />
+    <div id="content-pane">
+      <ScrollIndicator />
 
-  return (
-    <div id="app">
-      <Menu />
-      <div id="content-pane">
-        <ScrollIndicator />
+      <main>
+        <div id="content">
+          {children}
+        </div>
+      </main>
 
-        <main>
-          <div id="content">
-            {children}
-          </div>
-        </main>
-
-        <Footer />
-      </div>
+      <Footer />
     </div>
-  );
-};
+  </div>
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
