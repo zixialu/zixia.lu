@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => (
   <section id="about">
     <h1>
-      Zixia Lu is a full-stack web developer based in Toronto.
+      Zixia Lu is a full-stack developer based in Toronto.
     </h1>
 
     <p className="text--lg">
