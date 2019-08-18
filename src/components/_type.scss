@@ -101,12 +101,11 @@ h2, h3, h4 {
 a {
   // Remove default link highlighting
   color: inherit; /* default colors for links */
-  text-decoration: inherit; /* no underline */
 
   // Bold
   font-weight: 700;
   // Underline
-  border-bottom: 0.125em solid $color-primary;
+  text-decoration-color: $color-primary;
 
   &:hover {
     background-color: change-color($color: $color-primary, $alpha: 0.2);
@@ -122,7 +121,7 @@ a {
   // Link highlighting
   a {
     // No underline
-    border-bottom: none;
+    text-decoration: none;
 
     &:hover {
       background-color: $color-white;
