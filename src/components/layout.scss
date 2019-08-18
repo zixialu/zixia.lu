@@ -25,13 +25,18 @@
 
     main {
       max-width: 20em;
+      margin: 2em auto;
+
       @include for-sm-up {
         max-width: 30em;
       }
 
-      margin: 3em auto;
       @include for-md-up {
-        margin: 3em;
+        margin: 2em 3em;
+      }
+
+      section {
+        padding: 1em 0;
       }
     }
   }
