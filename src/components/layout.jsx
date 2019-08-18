@@ -27,21 +27,23 @@ const Layout = ({ children }) => {
   return (
     <div id="app">
       <Menu />
-      <div id="content">
+      <div id="content-pane">
         <ScrollIndicator />
-        <main>{children}</main>
-        <footer>
-          ©
-          {' '}
-          {new Date().getFullYear()}
-          , Built with
-          {' '}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <div id="content">
+          <main>{children}</main>
+          <footer>
+            ©
+            {' '}
+            {new Date().getFullYear()}
+            , Built with
+            {' '}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
 
-          . View this site on
-          {' '}
-          <a href="https://github.com/zixialu/zixia.lu">GitHub</a>
-        </footer>
+            . View this site on
+            {' '}
+            <a href="https://github.com/zixialu/zixia.lu">GitHub</a>
+          </footer>
+        </div>
       </div>
     </div>
   );

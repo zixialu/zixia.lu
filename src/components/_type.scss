@@ -89,9 +89,13 @@ p, ul li, ol li {
   margin-bottom: $space-md;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, form legend {
   line-height: $heading-line-height;
   margin-bottom: $space-sm;
+}
+
+h2, h3, h4 {
+  margin-top: $space-sm;
 }
 
 // Link highlighting

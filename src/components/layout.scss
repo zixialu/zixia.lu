@@ -20,29 +20,29 @@
     }
   }
 
+  #content-pane {
+    width: 100%;
+  }
+
   #content {
     flex: 1 1 auto;
+    margin: 0 2em;
 
     main {
-      max-width: 20em;
+      max-width: 40em;
       margin: 2em auto;
-
-      @include for-sm-up {
-        max-width: 30em;
-      }
-
       @include for-md-up {
-        margin: 2em 3em;
+        margin: 2em 0;
       }
 
       section {
         padding: 1em 0;
       }
-    }
 
-    aside {
-      border: 5px dotted $color-primary;
-      padding: 1em 2em 0.5em;
+      aside {
+        border: 6px dotted $color-primary;
+        padding: 1em 2em 0.5em;
+      }
     }
   }
 }
