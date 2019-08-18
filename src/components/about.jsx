@@ -25,7 +25,8 @@ const About = () => (
       That is to say, there&apos;s nothing of substance yet! Stay tuned, and
       feel free to take a peek at
       {' '}
-      <strong><a href="https://github.com/zixialu/zixia.lu">this project&apos;s repo</a></strong>
+      <strong><a href="https://github.com/zixialu/zixia.lu">this project on GitHub</a></strong>
+      .
     </p>
   </>
 );
