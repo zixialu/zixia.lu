@@ -9,16 +9,16 @@ import './externalLinks.scss';
 
 const links = [
   {
-    type: 'LinkedIn',
-    account: 'zixialu',
-    url: 'https://www.linkedin.com/in/zixialu/',
-    icon: faLinkedin,
-  },
-  {
     type: 'GitHub',
     account: 'zixialu',
     url: 'https://github.com/zixialu',
     icon: faGithub,
+  },
+  {
+    type: 'LinkedIn',
+    account: 'zixialu',
+    url: 'https://www.linkedin.com/in/zixialu/',
+    icon: faLinkedin,
   },
   {
     type: 'Email',
