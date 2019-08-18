@@ -31,9 +31,6 @@
     main {
       max-width: 33em;
       margin: 2em auto;
-      @include for-md-up {
-        margin: 2em 0;
-      }
 
       section {
         padding: 1em 0;
