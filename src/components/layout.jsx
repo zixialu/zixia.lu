@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import ScrollIndicator from './scrollIndicator';
 import Menu from './menu';
+import Footer from './footer';
 import './layout.scss';
 
 const Layout = ({ children }) => {
@@ -31,18 +32,8 @@ const Layout = ({ children }) => {
         <ScrollIndicator />
         <div id="content">
           <main>{children}</main>
-          <footer>
-            ©
-            {' '}
-            {new Date().getFullYear()}
-            , Built with
-            {' '}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
 
-            . View this site on
-            {' '}
-            <a href="https://github.com/zixialu/zixia.lu">GitHub</a>
-          </footer>
+          <Footer />
         </div>
       </div>
     </div>
