@@ -1,8 +1,8 @@
 import React from 'react';
 
 const About = () => (
-  <>
-    <h1 id="about" className="text--xxxxl">
+  <section id="about">
+    <h1 className="text--xxxxl">
       Zixia Lu is a full-stack web developer based in Toronto.
     </h1>
 
@@ -15,20 +15,22 @@ const About = () => (
       <strong>He could not have possibly known what the universe had in store.</strong>
     </p>
 
-    <p className="text--xxxl">
-      This is a
-      <br />
-      <strong>🚧WORK-IN-PROGRESS🚧</strong>
-    </p>
+    <aside>
+      <p className="text--xxl">
+        This is a
+        <br />
+        <strong>🚧WORK-IN-PROGRESS🚧</strong>
+      </p>
 
-    <p className="text--xl">
-      That is to say, there&apos;s nothing of substance yet! Stay tuned, and
-      feel free to take a peek at
-      {' '}
-      <strong><a href="https://github.com/zixialu/zixia.lu">this project on GitHub</a></strong>
-      .
-    </p>
-  </>
+      <p className="text--xl">
+        That is to say, there&apos;s nothing of substance yet! Stay tuned, and
+        feel free to take a peek at
+        {' '}
+        <strong><a href="https://github.com/zixialu/zixia.lu">this project on GitHub</a></strong>
+        .
+      </p>
+    </aside>
+  </section>
 );
 
 About.propTypes = {

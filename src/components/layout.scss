@@ -39,5 +39,10 @@
         padding: 1em 0;
       }
     }
+
+    aside {
+      border: 5px dotted $color-primary;
+      padding: 1em 2em 0.5em;
+    }
   }
 }
