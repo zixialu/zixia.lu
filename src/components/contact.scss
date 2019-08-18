@@ -1,14 +1,10 @@
-@import './type';
-
 #contact {
   .external-links {
     display: flex;
     flex-flow: column nowrap;
 
-    font-size: $text-lg;
-
     a {
-      border-bottom: inherit; /* no underline */
+      border-bottom: inherit; /* No underline */
     }
   }
 }
