@@ -41,6 +41,7 @@ const ExternalLinks = ({ vertical, showText }) => (
           href={link.url}
           target={link.target || '_blank'}
           rel="noreferrer noopener"
+          className={classNames({ 'show-text': showText })}
         >
           <div className="icon-container-square">
             <FontAwesomeIcon icon={link.icon} />

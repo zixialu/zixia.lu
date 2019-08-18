@@ -32,6 +32,11 @@
       padding-left: 0.625em;
     }
   }
+
+  a.show-text {
+    // Override huge button padding if text exists
+    padding: 0;
+  }
 }
 
 .external-links.external-links--vertical {
