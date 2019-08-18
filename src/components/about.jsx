@@ -11,7 +11,7 @@ const About = () => (
       early age that he was destined for great things.
     </p>
 
-    <p className="text--xl">
+    <p className="text--lg">
       <strong>He could not have possibly known what the universe had in store.</strong>
     </p>
   </section>
