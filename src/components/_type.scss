@@ -16,7 +16,7 @@ h6 {
     "Helvetica Neue", sans-serif;
 }
 
-// Default sizing
+// Base type
 body {
   font-size: 100%; // In most browsers, this defaults to 16px
   @include for-md-up {
