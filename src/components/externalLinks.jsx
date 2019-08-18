@@ -9,31 +9,34 @@ import './externalLinks.scss';
 
 const links = [
   {
-    name: 'LinkedIn',
+    type: 'LinkedIn',
+    account: 'zixialu',
     url: 'https://www.linkedin.com/in/zixialu/',
     icon: faLinkedin,
   },
   {
-    name: 'GitHub',
+    type: 'GitHub',
+    account: 'zixialu',
     url: 'https://github.com/zixialu',
     icon: faGithub,
   },
   {
-    name: 'Email',
+    type: 'Email',
+    account: 'zixialu@gmail.com',
     url: 'mailto:zixialu@gmail.com',
     target: '_self',
     icon: faEnvelope,
   },
 ];
 
-const ExternalLinks = ({ vertical, showNames }) => (
+const ExternalLinks = ({ vertical, showText }) => (
   <ul
     className={classNames(
       'external-links', { 'external-links--vertical': vertical },
     )}
   >
     {links.map((link) => (
-      <li key={link.name}>
+      <li key={link.type}>
         <a
           href={link.url}
           target={link.target || '_blank'}
@@ -42,8 +45,8 @@ const ExternalLinks = ({ vertical, showNames }) => (
           <div className="icon-container-square">
             <FontAwesomeIcon icon={link.icon} />
           </div>
-          {showNames && (
-            <span className="link-name">{link.name}</span>
+          {showText && (
+            <span className="link-text">{`${link.type}: ${link.account}`}</span>
           )}
         </a>
       </li>
@@ -53,12 +56,12 @@ const ExternalLinks = ({ vertical, showNames }) => (
 
 ExternalLinks.propTypes = {
   vertical: PropTypes.bool,
-  showNames: PropTypes.bool,
+  showText: PropTypes.bool,
 };
 
 ExternalLinks.defaultProps = {
   vertical: false,
-  showNames: false,
+  showText: false,
 };
 
 export default ExternalLinks;
