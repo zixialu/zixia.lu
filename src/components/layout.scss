@@ -24,11 +24,11 @@
     width: 100%;
   }
 
-  #content {
+  main {
     flex: 1 1 auto;
     margin: 0 2em;
 
-    main {
+    #content {
       max-width: 33em;
       margin: 2em auto;
 

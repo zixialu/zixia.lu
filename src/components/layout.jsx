@@ -30,11 +30,14 @@ const Layout = ({ children }) => {
       <Menu />
       <div id="content-pane">
         <ScrollIndicator />
-        <div id="content">
-          <main>{children}</main>
 
-          <Footer />
-        </div>
+        <main>
+          <div id="content">
+            {children}
+          </div>
+        </main>
+
+        <Footer />
       </div>
     </div>
   );
