@@ -13,12 +13,14 @@ const links = [
     account: 'zixialu',
     url: 'https://github.com/zixialu',
     icon: faGithub,
+    ariaLabel: 'Visit Zixia on GitHub',
   },
   {
     type: 'LinkedIn',
     account: 'zixialu',
     url: 'https://www.linkedin.com/in/zixialu/',
     icon: faLinkedin,
+    ariaLabel: 'Visit Zixia on LinkedIn',
   },
   {
     type: 'Email',
@@ -26,6 +28,7 @@ const links = [
     url: 'mailto:zixialu@gmail.com',
     target: '_self',
     icon: faEnvelope,
+    ariaLabel: 'Send Zixia an email',
   },
 ];
 
@@ -42,11 +45,13 @@ const ExternalLinks = ({ vertical, showText }) => (
           target={link.target || '_blank'}
           rel="noreferrer noopener"
           className={classNames({ 'show-text': showText })}
+          aria-label={link.ariaLabel}
         >
           {/* This div keeps the aspect ratio controlled */}
           <div className="icon-container">
             <FontAwesomeIcon icon={link.icon} />
           </div>
+
           {showText && (
             <span className="link-text">{link.account}</span>
           )}
