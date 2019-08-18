@@ -24,7 +24,7 @@ const links = [
   },
 ];
 
-const ExternalLinks = () => (
+const ExternalLinks = ({ vertical }) => (
   <ul className="external-links">
     {links.map((link) => (
       <li key={link.name}>
