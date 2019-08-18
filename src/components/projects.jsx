@@ -2,16 +2,16 @@ import React from 'react';
 
 const Projects = () => (
   <section id="projects">
-    <h1 className="text--xxxxl">Projects</h1>
+    <h1>Projects</h1>
 
     <aside>
-      <p className="text--xxl">
+      <p className="text--lg">
         This is a
         <br />
         <strong>🚧WORK-IN-PROGRESS🚧</strong>
       </p>
 
-      <p className="text--xl">
+      <p className="text--md">
         That is to say, there&apos;s nothing of substance yet! Stay tuned, and
         feel free to take a peek at
         {' '}

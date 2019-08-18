@@ -5,7 +5,7 @@ import './contact.scss';
 
 const Contact = () => (
   <section id="contact">
-    <h1 className="text--xxxxl">Contact</h1>
+    <h1>Contact</h1>
 
     <p className="text--lg">
       Zixia is reachable by

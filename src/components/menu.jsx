@@ -6,7 +6,7 @@ import './menu.scss';
 
 const Menu = () => (
   <nav id="menu" className="background--primary">
-    <Link to="/" className="brand text--xxxxl">zixia.lu</Link>
+    <Link to="/" className="brand">zixia.lu</Link>
     <ul className="nav-list">
       <li className="text--lg"><a href="#about">About</a></li>
       <li className="text--lg"><a href="#projects">Projects</a></li>
