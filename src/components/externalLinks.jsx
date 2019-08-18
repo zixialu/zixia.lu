@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import * as classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -25,7 +27,11 @@ const links = [
 ];
 
 const ExternalLinks = ({ vertical }) => (
-  <ul className="external-links">
+  <ul
+    className={classNames(
+      'external-links', { 'external-links--vertical': vertical },
+    )}
+  >
     {links.map((link) => (
       <li key={link.name}>
         <a
@@ -43,9 +49,11 @@ const ExternalLinks = ({ vertical }) => (
 );
 
 ExternalLinks.propTypes = {
+  vertical: PropTypes.bool,
 };
 
 ExternalLinks.defaultProps = {
+  vertical: false,
 };
 
 export default ExternalLinks;
