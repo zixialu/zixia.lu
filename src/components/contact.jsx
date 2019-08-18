@@ -7,11 +7,11 @@ const Contact = () => (
   <section id="contact">
     <h1 className="text--xxxxl">Contact</h1>
 
-    <p>
-      I&apos;m most active and reachable by
+    <p className="text--lg">
+      I&apos;m most reachable by
       {' '}
       <a href="mailto:zixialu@gmail.com">email</a>
-      , but you can also find me on
+      , or on
       {' '}
       <a
         href="https://www.linkedin.com/in/zixialu/"
@@ -19,6 +19,15 @@ const Contact = () => (
         rel="noreferrer noopener"
       >
         LinkedIn
+      </a>
+      . You can also take a peek at all the great and terrible things I&apos;ve been up to on
+      {' '}
+      <a
+        href="https://github.com/zixialu"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        GitHub
       </a>
       .
     </p>
