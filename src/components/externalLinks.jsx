@@ -13,7 +13,7 @@ const links = [
     account: 'zixialu',
     url: 'https://github.com/zixialu',
     icon: faGithub,
-    ariaLabel: 'Visit Zixia on GitHub',
+    ariaLabel: 'Visit zixialu on GitHub',
   },
   {
     type: 'LinkedIn',
@@ -28,7 +28,7 @@ const links = [
     url: 'mailto:zixialu@gmail.com',
     target: '_self',
     icon: faEnvelope,
-    ariaLabel: 'Send Zixia an email',
+    ariaLabel: 'Send Zixia an email at zixialu@gmail.com',
   },
 ];
 
