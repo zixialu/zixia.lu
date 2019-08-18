@@ -8,7 +8,7 @@ const Contact = () => (
     <h1 className="text--xxxxl">Contact</h1>
 
     <p className="text--lg">
-      I&apos;m most reachable by
+      Zixia is reachable by
       {' '}
       <a href="mailto:zixialu@gmail.com">email</a>
       , or on
@@ -20,7 +20,7 @@ const Contact = () => (
       >
         LinkedIn
       </a>
-      . You can also take a peek at all the great and terrible things I&apos;ve been up to on
+      . You can also take a peek at all the great and terrible things he&apos;s been up to on
       {' '}
       <a
         href="https://github.com/zixialu"
