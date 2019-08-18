@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ExternalLinks from './externalLinks';
+import './contact.scss';
 
 const Contact = () => (
   <section id="contact">
