@@ -6,5 +6,9 @@
     flex-flow: column nowrap;
 
     font-size: $text-lg;
+
+    a {
+      border-bottom: inherit; /* no underline */
+    }
   }
 }

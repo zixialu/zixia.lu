@@ -43,11 +43,12 @@ const ExternalLinks = ({ vertical, showText }) => (
           rel="noreferrer noopener"
           className={classNames({ 'show-text': showText })}
         >
-          <div className="icon-container-square">
+          {/* This div keeps the aspect ratio controlled */}
+          <div className="icon-container">
             <FontAwesomeIcon icon={link.icon} />
           </div>
           {showText && (
-            <span className="link-text">{`${link.type}: ${link.account}`}</span>
+            <span className="link-text">{link.account}</span>
           )}
         </a>
       </li>

@@ -1,12 +1,11 @@
 .external-links {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: baseline;
 
   list-style-type: none;
 
-  padding: 0 1em;
   margin: 0;
 
   a {
@@ -14,9 +13,10 @@
     flex-flow: row wrap;
     align-items: baseline;
 
-    padding: 0.5em;
+    padding: 0.625em;
+    margin: 0.25em;
 
-    .icon-container-square {
+    .icon-container {
       width: 1.125em;
       height: 1.125em;
       vertical-align: middle;
@@ -34,8 +34,9 @@
   }
 
   a.show-text {
-    // Override huge button padding if text exists
+    // Override link spacing if text exists
     padding: 0;
+    margin: 0;
   }
 }
 
