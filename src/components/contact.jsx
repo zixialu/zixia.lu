@@ -20,7 +20,7 @@ const Contact = () => (
       >
         LinkedIn
       </a>
-      . You can also take a peek at all the great and terrible things he&apos;s been up to on
+      . You can also take a peek at all the great and terrible things he&apos;s made on
       {' '}
       <a
         href="https://github.com/zixialu"
