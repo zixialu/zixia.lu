@@ -7,7 +7,7 @@ import ExternalLinks from './ExternalLinks';
 const Menu = () => (
   <Nav id="menu" className="background--primary">
     {/* TODO: Replace */}
-    <a href="/" className="brand">zixia.lu</a>
+    <a href="/" className="brand text--xl">zixia.lu</a>
     <ul className="nav-list">
       <li className="text--lg"><a href="#about">About</a></li>
       <li className="text--lg"><a href="#projects">Projects</a></li>
@@ -41,10 +41,9 @@ const Nav = styled.nav`
   }
 
   .brand {
-    font-size: $text-xl;
     font-weight: 900;
     font-style: italic;
-    line-height: $heading-line-height;
+    line-height: 1.2em; // $heading-line-height
 
     margin: 30vh auto 0.5rem;
 

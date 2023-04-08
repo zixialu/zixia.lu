@@ -51,7 +51,7 @@ const Background = styled.div`
 `;
 
 const Fill = styled.div`
-  background-color: $color-primary; // color-primary
+  background-color: #e54b4b; // color-primary
   height: 100%;
 `;
 
