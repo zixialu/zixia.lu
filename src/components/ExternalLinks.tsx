@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as classNames from 'classnames';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-import './externalLinks.scss';
+
+export interface ExternalLinksProps {
+  vertical: Boolean,
+  showText: Boolean,
+}
 
 const links = [
   {
@@ -32,19 +36,15 @@ const links = [
   },
 ];
 
-const ExternalLinks = ({ vertical, showText }) => (
-  <ul
-    className={classNames(
-      'external-links', { 'external-links--vertical': vertical },
-    )}
-  >
+const ExternalLinks = ({ vertical, showText }: ExternalLinksProps) => (
+  <List vertical={vertical}>
     {links.map((link) => (
       <li key={link.type}>
-        <a
+        <Link
+          showText={showText}
           href={link.url}
           target={link.target || '_blank'}
           rel="noreferrer noopener"
-          className={classNames({ 'show-text': showText })}
           aria-label={link.ariaLabel}
         >
           {/* This div keeps the aspect ratio controlled */}
@@ -55,11 +55,49 @@ const ExternalLinks = ({ vertical, showText }) => (
           {showText && (
             <span className="link-text">{link.account}</span>
           )}
-        </a>
+        </Link>
       </li>
     ))}
-  </ul>
+  </List>
 );
+
+const List = styled.ul<{ vertical?: Boolean }>`
+  display: flex;
+  flex-flow: ${({ vertical }) => vertical ? 'column' : 'row'} nowrap;
+  justify-content: ${({ vertical }) => vertical ? 'flex-start' : 'center'};
+  align-items: ${({ vertical }) => vertical ? 'flex-start' : 'baseline'};
+
+  list-style-type: none;
+
+  margin: 0;
+  ${({ vertical }) => vertical ? ' margin-top: 2.5em;' : ''}
+`;
+
+const Link = styled.a<{ showText?: Boolean }>`
+
+display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+
+    padding: ${({ showText }) => showText ? '0' : '0.625em'};
+    margin: ${({ showText }) => showText ? '0' : '0.25em'};
+
+    .icon-container {
+      width: 1.125em;
+      height: 1.125em;
+      vertical-align: middle;
+
+      svg {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+      }
+    }
+
+    .link-text {
+      padding-left: 0.625em;
+    }
+`;
 
 ExternalLinks.propTypes = {
   vertical: PropTypes.bool,

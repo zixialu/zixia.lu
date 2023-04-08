@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
-import useEventListener from '../hooks/useEventListener';
+import styled from 'styled-components';
 
-import './scrollIndicator.scss';
+import useEventListener from '../hooks/useEventListener';
 
 const ScrollIndicator = () => {
   // Calculate the progress and return as a percentage string
@@ -33,11 +33,27 @@ const ScrollIndicator = () => {
   const progressStyle = { width: progress };
 
   return (
-    <div className="scroll-indicator">
-      <div className="scroll-fill" style={progressStyle} />
-    </div>
+    <Background className="scroll-indicator">
+      <Fill className="scroll-fill" style={progressStyle} />
+    </Background>
   );
 };
+
+const Background = styled.div`
+  height: 6px;
+  width: 100%;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  z-index: 2;
+`;
+
+const Fill = styled.div`
+  background-color: #e54b4b; // color-primary
+  height: 100%;
+`;
 
 ScrollIndicator.propTypes = {
 };
