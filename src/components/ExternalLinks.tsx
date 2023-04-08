@@ -63,6 +63,7 @@ const List = styled.ul<{ vertical?: Boolean }>`
   flex-flow: ${({ vertical }) => (vertical ? 'column' : 'row')} nowrap;
   justify-content: ${({ vertical }) => (vertical ? 'flex-start' : 'center')};
   align-items: ${({ vertical }) => (vertical ? 'flex-start' : 'baseline')};
+  ${({ vertical }) => (vertical ? ' ' : 'width: 100%;')}
 
   list-style-type: none;
 
