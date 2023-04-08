@@ -1,7 +1,9 @@
 {
   "name": "zixia.lu",
   "private": true,
-  "version": "0.0.0",
+  "description": "A portfolio page",
+  "version": "2.0.0",
+  "author": "Zixia Lu <zixialu@gmail.com>",
   "type": "module",
   "scripts": {
     "dev": "vite",
