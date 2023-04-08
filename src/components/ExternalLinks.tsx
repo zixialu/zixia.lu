@@ -5,10 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-
 export interface ExternalLinksProps {
-  vertical: Boolean,
-  showText: Boolean,
+  vertical: Boolean;
+  showText: Boolean;
 }
 
 const links = [
@@ -52,9 +51,7 @@ const ExternalLinks = ({ vertical, showText }: ExternalLinksProps) => (
             <FontAwesomeIcon icon={link.icon} />
           </div>
 
-          {showText && (
-            <span className="link-text">{link.account}</span>
-          )}
+          {showText && <span className="link-text">{link.account}</span>}
         </Link>
       </li>
     ))}
@@ -63,40 +60,39 @@ const ExternalLinks = ({ vertical, showText }: ExternalLinksProps) => (
 
 const List = styled.ul<{ vertical?: Boolean }>`
   display: flex;
-  flex-flow: ${({ vertical }) => vertical ? 'column' : 'row'} nowrap;
-  justify-content: ${({ vertical }) => vertical ? 'flex-start' : 'center'};
-  align-items: ${({ vertical }) => vertical ? 'flex-start' : 'baseline'};
+  flex-flow: ${({ vertical }) => (vertical ? 'column' : 'row')} nowrap;
+  justify-content: ${({ vertical }) => (vertical ? 'flex-start' : 'center')};
+  align-items: ${({ vertical }) => (vertical ? 'flex-start' : 'baseline')};
 
   list-style-type: none;
 
   margin: 0;
-  ${({ vertical }) => vertical ? ' margin-top: 2.5em;' : ''}
+  ${({ vertical }) => (vertical ? ' margin-top: 2.5em;' : '')}
 `;
 
 const Link = styled.a<{ showText?: Boolean }>`
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
 
-display: flex;
-    flex-flow: row wrap;
-    align-items: baseline;
+  padding: ${({ showText }) => (showText ? '0' : '0.625em')};
+  margin: ${({ showText }) => (showText ? '0' : '0.25em')};
 
-    padding: ${({ showText }) => showText ? '0' : '0.625em'};
-    margin: ${({ showText }) => showText ? '0' : '0.25em'};
+  .icon-container {
+    width: 1.125em;
+    height: 1.125em;
+    vertical-align: middle;
 
-    .icon-container {
-      width: 1.125em;
-      height: 1.125em;
-      vertical-align: middle;
-
-      svg {
-        width: 100%;
-        height: 100%;
-        margin: auto;
-      }
+    svg {
+      width: 100%;
+      height: 100%;
+      margin: auto;
     }
+  }
 
-    .link-text {
-      padding-left: 0.625em;
-    }
+  .link-text {
+    padding-left: 0.625em;
+  }
 `;
 
 ExternalLinks.propTypes = {

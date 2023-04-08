@@ -7,11 +7,19 @@ import ExternalLinks from './ExternalLinks';
 const Menu = () => (
   <Nav id="menu" className="background--primary">
     {/* TODO: Replace */}
-    <a href="/" className="brand text--xl">zixia.lu</a>
+    <a href="/" className="brand text--xl">
+      zixia.lu
+    </a>
     <ul className="nav-list">
-      <li className="text--lg"><a href="#about">About</a></li>
-      <li className="text--lg"><a href="#projects">Projects</a></li>
-      <li className="text--lg"><a href="#contact">Contact</a></li>
+      <li className="text--lg">
+        <a href="#about">About</a>
+      </li>
+      <li className="text--lg">
+        <a href="#projects">Projects</a>
+      </li>
+      <li className="text--lg">
+        <a href="#contact">Contact</a>
+      </li>
     </ul>
 
     <ExternalLinks />
@@ -31,13 +39,13 @@ const Nav = styled.nav`
   padding-bottom: 1em;
 
   @media only screen and (min-width: 900px) {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 
-      height: 100vh;
-      align-items: flex-start;
-      text-align: start;
+    height: 100vh;
+    align-items: flex-start;
+    text-align: start;
   }
 
   .brand {
@@ -74,10 +82,8 @@ const Nav = styled.nav`
   }
 `;
 
-Menu.propTypes = {
-};
+Menu.propTypes = {};
 
-Menu.defaultProps = {
-};
+Menu.defaultProps = {};
 
 export default Menu;

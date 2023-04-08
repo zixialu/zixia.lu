@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 import Layout from './components/Layout';
 import About from './components/About';
@@ -12,7 +12,7 @@ function App() {
       <Projects />
       <Contact />
     </Layout>
-  )
+  );
 }
 
-export default App
+export default App;

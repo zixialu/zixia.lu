@@ -18,13 +18,10 @@ const ScrollIndicator = () => {
 
   // Event handler to update the progress; uses useCallback so that reference
   // never changes.
-  const scrollHandler = useCallback(
-    () => {
-      const newProgress = getProgress();
-      setProgress(newProgress);
-    },
-    [setProgress],
-  );
+  const scrollHandler = useCallback(() => {
+    const newProgress = getProgress();
+    setProgress(newProgress);
+  }, [setProgress]);
 
   // Add event listener using our hook
   useEventListener('scroll', scrollHandler);
@@ -55,10 +52,8 @@ const Fill = styled.div`
   height: 100%;
 `;
 
-ScrollIndicator.propTypes = {
-};
+ScrollIndicator.propTypes = {};
 
-ScrollIndicator.defaultProps = {
-};
+ScrollIndicator.defaultProps = {};
 
 export default ScrollIndicator;

@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
@@ -20,9 +13,7 @@ const Layout = ({ children }: any) => (
       <ScrollIndicator />
 
       <Main>
-        <Content id="content">
-          {children}
-        </Content>
+        <Content id="content">{children}</Content>
       </Main>
 
       <Footer />

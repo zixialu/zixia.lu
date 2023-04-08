@@ -8,11 +8,7 @@ const Contact = () => (
     <h1>Contact</h1>
 
     <p className="text--lg">
-      Zixia is reachable by
-      {' '}
-      <a href="mailto:zixialu@gmail.com">email</a>
-      , or on
-      {' '}
+      Zixia is reachable by <a href="mailto:zixialu@gmail.com">email</a>, or on{' '}
       <a
         href="https://www.linkedin.com/in/zixialu/"
         target="_blank"
@@ -20,8 +16,8 @@ const Contact = () => (
       >
         LinkedIn
       </a>
-      . You can also see all the great and terrible things he&apos;s been up to on
-      {' '}
+      . You can also see all the great and terrible things he&apos;s been up to
+      on{' '}
       <a
         href="https://github.com/zixialu"
         target="_blank"
@@ -36,10 +32,8 @@ const Contact = () => (
   </section>
 );
 
-Contact.propTypes = {
-};
+Contact.propTypes = {};
 
-Contact.defaultProps = {
-};
+Contact.defaultProps = {};
 
 export default Contact;
