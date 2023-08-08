@@ -19,12 +19,6 @@ h6 {
 // Base type
 body {
   font-size: 100%; // In most browsers, this defaults to 16px
-  @include for-md-up {
-    font-size: 112.5%; // = 18px in most browsers
-  }
-  @include for-lg-up {
-    font-size: 131.25%; // = 21px in most browsers
-  }
 
   // Font smoothing for Dark-on-Light
   -webkit-font-smoothing: auto;
