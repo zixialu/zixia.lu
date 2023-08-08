@@ -7,7 +7,6 @@ import Contact from './components/Contact';
 function App() {
   return (
     <Layout>
-      {/* <SEO title="Full-stack Developer" /> */}
       <About />
       <Projects />
       <Contact />
