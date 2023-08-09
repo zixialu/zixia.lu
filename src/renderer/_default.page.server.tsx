@@ -8,7 +8,7 @@ import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr/server';
 import type { PageContextServer } from './types';
 import { getPageTitle } from './getPageTitle';
 
-export const passToClient = ['pageProps', 'urlPathname', 'documentProps'];
+export const passToClient = ['pageProps', 'documentProps'];
 
 export const render = async (pageContext: PageContextServer) => {
   const { Page, pageProps } = pageContext;
