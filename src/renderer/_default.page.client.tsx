@@ -22,7 +22,7 @@ export const render = async (pageContext: PageContextClient) => {
 
   const rootEl = document.getElementById('react-root')!;
   if (pageContext.isHydration) {
-    ReactDOM.hydrateRoot(rootEl, page);
+    reactRoot = ReactDOM.hydrateRoot(rootEl, page);
   } else {
     if (!reactRoot) {
       reactRoot = ReactDOM.createRoot(rootEl);
