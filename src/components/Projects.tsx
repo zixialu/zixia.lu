@@ -2,7 +2,9 @@ import React from 'react';
 
 const Projects = () => (
   <section id="projects">
-    <h1>Projects</h1>
+    <a href="/projects">
+      <h1>Projects</h1>
+    </a>
 
     <aside>
       <p className="text--lg">

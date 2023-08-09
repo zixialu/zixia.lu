@@ -5,7 +5,9 @@ import ExternalLinks from './ExternalLinks';
 
 const Contact = () => (
   <section id="contact">
-    <h1>Contact</h1>
+    <a href="/contact">
+      <h1>Contact</h1>
+    </a>
 
     <p className="text--lg">
       Zixia is reachable by <a href="mailto:zixialu@gmail.com">email</a>, or on{' '}
@@ -31,9 +33,5 @@ const Contact = () => (
     <ExternalLinks vertical showText />
   </section>
 );
-
-Contact.propTypes = {};
-
-Contact.defaultProps = {};
 
 export default Contact;

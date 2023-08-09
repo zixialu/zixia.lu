@@ -1,24 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
+import type { PageContext as IPageContext } from '../renderer/types';
+import { PageContextProvider } from '../contexts/PageContext';
 import ScrollIndicator from './ScrollIndicator';
 import Menu from './Menu';
 import Footer from './Footer';
 
-const Layout = ({ children }: any) => (
-  <AppContainer id="app">
-    <Menu />
-    <ContentPane id="content-pane">
-      <ScrollIndicator />
+import '../index.scss';
 
-      <Main>
-        <Content id="content">{children}</Content>
-      </Main>
+export interface LayoutProps {
+  pageContext: IPageContext;
+  children?: React.ReactNode;
+}
 
-      <Footer />
-    </ContentPane>
-  </AppContainer>
+const Layout: React.FC<LayoutProps> = ({ children, pageContext }) => (
+  <React.StrictMode>
+    <PageContextProvider pageContext={pageContext}>
+      <AppContainer id="app">
+        <Menu />
+        <ContentPane id="content-pane">
+          <ScrollIndicator />
+
+          <Main>
+            <Content id="content">{children}</Content>
+          </Main>
+
+          <Footer />
+        </ContentPane>
+      </AppContainer>
+    </PageContextProvider>
+  </React.StrictMode>
 );
 
 const AppContainer = styled.div`
@@ -51,9 +63,5 @@ const Content = styled.div`
     padding: 1em 2em 0.5em;
   }
 `;
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Layout;
