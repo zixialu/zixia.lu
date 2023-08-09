@@ -80,8 +80,4 @@ const Nav = styled.nav`
   }
 `;
 
-Menu.propTypes = {};
-
-Menu.defaultProps = {};
-
 export default Menu;

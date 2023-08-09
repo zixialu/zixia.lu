@@ -27,8 +27,4 @@ const Projects = () => (
   </section>
 );
 
-Projects.propTypes = {};
-
-Projects.defaultProps = {};
-
 export default Projects;

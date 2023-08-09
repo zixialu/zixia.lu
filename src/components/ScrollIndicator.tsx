@@ -52,8 +52,4 @@ const Fill = styled.div`
   height: 100%;
 `;
 
-ScrollIndicator.propTypes = {};
-
-ScrollIndicator.defaultProps = {};
-
 export default ScrollIndicator;

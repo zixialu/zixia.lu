@@ -17,8 +17,4 @@ const About = () => (
   </section>
 );
 
-About.propTypes = {};
-
-About.defaultProps = {};
-
 export default About;
