@@ -1,14 +1,14 @@
 // https://usehooks.com/useEventListener/
 
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, SyntheticEvent } from 'react';
 
 const useEventListener = (
-  eventName,
-  handler,
+  eventName: any,
+  handler: (event: SyntheticEvent) => void,
   element = typeof window !== 'undefined' && window,
 ) => {
   // Create a ref that stores handler
-  const savedHandler = useRef();
+  const savedHandler = useRef<((event: SyntheticEvent) => void) | null>(null);
 
   // Update ref.current value if handler changes.
   // This allows our effect below to always get latest handler ...
@@ -25,7 +25,7 @@ const useEventListener = (
       if (!isSupported) return;
 
       // Create event listener that calls handler function stored in ref
-      const eventListener = (event) => savedHandler.current(event);
+      const eventListener = (event: SyntheticEvent) => savedHandler.current?.(event);
 
       // Add event listener
       element.addEventListener(eventName, eventListener);

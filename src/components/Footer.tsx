@@ -1,10 +1,8 @@
 import React from 'react';
 
-import './footer.scss';
-
 const Footer = () => (
   <footer>
-    ©
+    {/* ©
     {' '}
     {new Date().getFullYear()}
     {' '}
@@ -14,11 +12,10 @@ const Footer = () => (
 
     . View this site on
     {' '}
-    <a href="https://github.com/zixialu/zixia.lu">GitHub</a>
+    <a href="https://github.com/zixialu/zixia.lu">GitHub</a> */}
   </footer>
 );
 
-Footer.propTypes = {
-};
+Footer.propTypes = {};
 
 export default Footer;
